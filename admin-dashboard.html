@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Fitness & Wellness Center</title>
+    <link rel="stylesheet" href="admin-dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard-shell">
+
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="sidebar-logo">
+            <a href="admin-dashboard.html">
+                <img src="Assets/blacklogo.webp" alt="Stackly">
+            </a>
+        </div>
+
+        <div class="sidebar-profile">
+            <div class="profile-avatar">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <div class="profile-content">
+                <strong id="sidebarAdminName">Admin</strong>
+                <span>Administrator</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-group">
+                <span class="sidebar-label">WORKSPACE</span>
+
+                <a href="admin-dashboard.html" class="sidebar-link active">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="member.html" class="sidebar-link">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Members</span>
+                </a>
+
+                <a href="admin-schedule.html" class="sidebar-link">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Schedule</span>
+                </a>
+            </div>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="login.html" class="logout-link">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button type="button" class="mobile-menu" id="mobileMenuButton" aria-label="Open menu">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <a href="admin-dashboard.html" class="mobile-logo">
+                    <img src="Assets/blacklogo.webp" alt="Stackly">
+                </a>
+
+                <div class="header-heading">
+                    <span>ADMIN WORKSPACE</span>
+                    <h1>FITNESS DASHBOARD</h1>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <a href="error.html" class="header-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="error.html" class="header-icon">
+                    <i class="fa-regular fa-bell"></i>
+                </a>
+
+                <a href="error.html" class="header-user">
+                    <div class="header-avatar">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+
+                    <div>
+                        <strong id="headerAdminName">Admin</strong>
+                        <span>Administrator</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </header>
+
+        <section class="admin-page">
+
+            <div class="welcome-panel">
+
+                <div class="welcome-content">
+                    <span class="section-label">ADMIN WORKSPACE ACTIVE</span>
+
+                    <h2>
+                        WELCOME BACK,
+                        <strong id="welcomeAdminName">ADMIN</strong>
+                    </h2>
+
+                    <p>
+                        Manage your fitness center, monitor member activity,
+                        review schedules, and keep daily operations moving smoothly.
+                    </p>
+
+                    <div class="welcome-actions">
+                        <a href="error.html" class="primary-button">
+                            MANAGE MEMBERS
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="error.html" class="secondary-button">
+                            VIEW SCHEDULE
+                            <i class="fa-regular fa-calendar"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="welcome-orbit">
+                    <div class="orbit-ring orbit-ring-one"></div>
+                    <div class="orbit-ring orbit-ring-two"></div>
+                    <div class="orbit-center">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <span>FIT</span>
+                    </div>
+                    <span class="orbit-dot dot-one"></span>
+                    <span class="orbit-dot dot-two"></span>
+                    <span class="orbit-dot dot-three"></span>
+                </div>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <span class="stat-status">+12%</span>
+                    </div>
+
+                    <span class="stat-label">TOTAL MEMBERS</span>
+                    <strong>1,248</strong>
+                    <small>Active fitness members</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <span class="stat-status">TODAY</span>
+                    </div>
+
+                    <span class="stat-label">SESSIONS</span>
+                    <strong>42</strong>
+                    <small>Training sessions scheduled</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-user-group"></i>
+                        </div>
+                        <span class="stat-status">+8%</span>
+                    </div>
+
+                    <span class="stat-label">ACTIVE TODAY</span>
+                    <strong>386</strong>
+                    <small>Members checked in</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <span class="stat-status">94%</span>
+                    </div>
+
+                    <span class="stat-label">MEMBER RETENTION</span>
+                    <strong>94%</strong>
+                    <small>Current monthly rate</small>
+                </div>
+
+            </div>
+
+            <div class="dashboard-grid">
+
+                <section class="activity-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span>MEMBER ACTIVITY</span>
+                            <h3>FITNESS <strong>OVERVIEW.</strong></h3>
+                        </div>
+
+                        <a href="error.html" class="card-link">
+                            VIEW REPORT
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <div class="activity-chart">
+
+                        <div class="chart-scale">
+                            <span>500</span>
+                            <span>400</span>
+                            <span>300</span>
+                            <span>200</span>
+                            <span>100</span>
+                            <span>0</span>
+                        </div>
+
+                        <div class="chart-area">
+
+                            <div class="chart-lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="chart-bars">
+                                <div class="bar-column"><i style="height:45%"></i><span>MON</span></div>
+                                <div class="bar-column"><i style="height:62%"></i><span>TUE</span></div>
+                                <div class="bar-column"><i style="height:55%"></i><span>WED</span></div>
+                                <div class="bar-column"><i style="height:78%"></i><span>THU</span></div>
+                                <div class="bar-column"><i style="height:68%"></i><span>FRI</span></div>
+                                <div class="bar-column"><i style="height:88%"></i><span>SAT</span></div>
+                                <div class="bar-column"><i style="height:72%"></i><span>SUN</span></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="quick-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span>QUICK ACTIONS</span>
+                            <h3>MANAGE <strong>NOW.</strong></h3>
+                        </div>
+                    </div>
+
+                    <div class="quick-list">
+
+                        <a href="error.html" class="quick-item">
+                            <div class="quick-icon">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+
+                            <div>
+                                <strong>Add Member</strong>
+                                <span>Create a new member profile</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="error.html" class="quick-item">
+                            <div class="quick-icon">
+                                <i class="fa-solid fa-calendar-plus"></i>
+                            </div>
+
+                            <div>
+                                <strong>Create Schedule</strong>
+                                <span>Add a training session</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="error.html" class="quick-item">
+                            <div class="quick-icon">
+                                <i class="fa-solid fa-chart-pie"></i>
+                            </div>
+
+                            <div>
+                                <strong>View Analytics</strong>
+                                <span>Check fitness center reports</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="bottom-grid">
+
+                <section class="members-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span>RECENT MEMBERS</span>
+                            <h3>NEW <strong>MEMBERS.</strong></h3>
+                        </div>
+
+                        <a href="error.html" class="card-link">
+                            VIEW ALL
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="member-list">
+
+                        <a href="error.html" class="member-row">
+                            <div class="member-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div class="member-details">
+                                <strong>Anjali Sharma</strong>
+                                <span>Pro Membership</span>
+                            </div>
+
+                            <span class="member-date">TODAY</span>
+                        </a>
+
+                        <a href="error.html" class="member-row">
+                            <div class="member-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div class="member-details">
+                                <strong>Rohan Kumar</strong>
+                                <span>Elite Membership</span>
+                            </div>
+
+                            <span class="member-date">TODAY</span>
+                        </a>
+
+                        <a href="error.html" class="member-row">
+                            <div class="member-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div class="member-details">
+                                <strong>Meera Rao</strong>
+                                <span>Essential Membership</span>
+                            </div>
+
+                            <span class="member-date">YESTERDAY</span>
+                        </a>
+
+                        <a href="error.html" class="member-row">
+                            <div class="member-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div class="member-details">
+                                <strong>Vikram Singh</strong>
+                                <span>Pro Membership</span>
+                            </div>
+
+                            <span class="member-date">YESTERDAY</span>
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <section class="performance-card">
+
+                    <div class="performance-heading">
+                        <span>MONTHLY PERFORMANCE</span>
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+
+                    <div class="performance-number">
+                        <strong>86</strong>
+                        <span>%</span>
+                    </div>
+
+                    <p>
+                        Overall fitness center performance is above the monthly target.
+                    </p>
+
+                    <div class="performance-progress">
+                        <span style="width:86%"></span>
+                    </div>
+
+                    <div class="performance-bottom">
+                        <span>MONTHLY TARGET</span>
+                        <strong>80%</strong>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="admin-dashboard.js"></script>
+</body>
+</html>

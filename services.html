@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fitness & Wellness Center</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="service.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <nav class="navbar fitness-navbar">
+        <div class="container-fluid navbar-container">
+
+            <a href="index.html" class="brand-logo">
+                <img src="Assets/blacklogo.webp" alt="FitWell Fitness & Wellness" class="logo-image">
+            </a>
+
+            <div class="desktop-navigation">
+                <ul class="navbar-menu">
+                    <li>
+                        <a href="index.html" class="nav-link ">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link ">About Us</a>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-link active">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-actions">
+                <a href="login.html" class="login-btn">Login</a>
+
+                <a href="register.html" class="register-btn">
+                    Register
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </nav>
+</header>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<aside class="mobile-sidebar" id="mobileSidebar" aria-hidden="true">
+
+    <div class="mobile-sidebar-header">
+
+        <a href="index.html" class="mobile-logo">
+            <img
+                src="Assets/blacklogo.webp"
+                alt="FitWell Fitness & Wellness"
+                class="logo-image"
+            >
+        </a>
+
+        <button
+            class="mobile-close-btn"
+            id="mobileCloseBtn"
+            type="button"
+            aria-label="Close navigation menu"
+        >
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+    </div>
+
+    <div class="mobile-navigation">
+
+        <a href="index.html" class="mobile-nav-link ">
+            <span>Home</span>
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <a href="about.html" class="mobile-nav-link ">
+            <span>About Us</span>
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <a href="services.html" class="mobile-nav-link active">
+            <span>Services</span>
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <a href="blog.html" class="mobile-nav-link">
+            <span>Blog</span>
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <a href="contact.html" class="mobile-nav-link">
+            <span>Contact</span>
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+    </div>
+
+    <div class="mobile-actions">
+
+        <a href="login.html" class="mobile-login-btn">
+            Login
+        </a>
+
+        <a href="register.html" class="mobile-register-btn">
+            Register
+            <i class="bi bi-arrow-up-right"></i>
+        </a>
+
+    </div>
+
+</aside>
+<section class="service-hero" id="serviceHero">
+    <div class="service-hero-bg">
+        <img src="Assets/fit7.webp" alt="Fitness service">
+    </div>
+
+    <div class="service-hero-overlay"></div>
+
+    <div class="service-hero-content">
+        <div class="service-hero-title">
+            <span class="service-hero-red">OUR</span>
+            <span class="service-hero-white">SERVICE</span>
+        </div>
+
+        <div class="service-hero-breadcrumb">
+            <a href="index.html">HOME</a>
+            <span>/</span>
+            <span>OUR SERVICE</span>
+        </div>
+    </div>
+</section>
+<section class="service-intro" id="serviceIntro">
+    <div class="service-intro-container">
+
+        <div class="service-intro-top">
+            <span class="service-intro-label">OUR SERVICES</span>
+            <span class="service-intro-number">01 — 05</span>
+        </div>
+
+        <div class="service-intro-heading">
+            <h2>
+                BUILT FOR
+                <span>YOUR GOALS.</span>
+            </h2>
+
+            <div class="service-intro-description">
+                <p>
+                    Whether you are starting your fitness journey, improving
+                    performance, or transforming your lifestyle, our expert-led
+                    programs are designed around you.
+                </p>
+
+                <a href="contact.html" class="service-intro-link">
+                    FIND YOUR PROGRAM
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="service-intro-grid">
+
+            <article class="service-intro-card service-intro-card-large">
+                <div class="service-intro-image">
+                    <img src="Assets/fit1.webp" alt="Strength training">
+                    <div class="service-intro-overlay"></div>
+                    <span class="service-intro-card-number">01</span>
+
+                    <div class="service-intro-card-title">
+                        <span>BUILD POWER</span>
+                        <h3>STRENGTH<br>TRAINING</h3>
+                    </div>
+                </div>
+
+                <div class="service-intro-card-bottom">
+                    <p>
+                        Build strength, improve stability, and develop a stronger
+                        foundation with structured training.
+                    </p>
+                    <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="service-intro-card">
+                <div class="service-intro-image">
+                    <img src="Assets/fit2.webp" alt="Personal training">
+                    <div class="service-intro-overlay"></div>
+                    <span class="service-intro-card-number">02</span>
+
+                    <div class="service-intro-card-title">
+                        <span>ONE TO ONE</span>
+                        <h3>PERSONAL<br>TRAINING</h3>
+                    </div>
+                </div>
+
+                <div class="service-intro-card-bottom">
+                    <p>
+                        Personal coaching created around your body, goals,
+                        schedule, and fitness level.
+                    </p>
+                    <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="service-intro-card">
+                <div class="service-intro-image">
+                    <img src="Assets/fit3.webp" alt="Cardio conditioning">
+                    <div class="service-intro-overlay"></div>
+                    <span class="service-intro-card-number">03</span>
+
+                    <div class="service-intro-card-title">
+                        <span>MOVE MORE</span>
+                        <h3>CARDIO<br>FITNESS</h3>
+                    </div>
+                </div>
+
+                <div class="service-intro-card-bottom">
+                    <p>
+                        Improve endurance, stamina, and cardiovascular fitness
+                        through dynamic workouts.
+                    </p>
+                    <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="service-intro-bottom">
+            <span>TRAIN WITH PURPOSE</span>
+            <div></div>
+            <span>RESULTS THAT LAST</span>
+        </div>
+
+    </div>
+</section>
+<section class="service-featured" id="personalTraining">
+    <div class="service-featured-container">
+
+        <div class="service-featured-image">
+            <img src="Assets/fit11.webp" alt="Personal training session">
+
+            <div class="service-featured-image-overlay"></div>
+
+            <span class="service-featured-number">02</span>
+
+            <div class="service-featured-badge">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>PERSONALIZED<br>TRAINING</span>
+            </div>
+        </div>
+
+        <div class="service-featured-content">
+            <span class="service-featured-label">PERSONAL TRAINING</span>
+
+            <h2>
+                YOUR GOAL.
+                <strong>YOUR PLAN.</strong>
+                YOUR RESULTS.
+            </h2>
+
+            <p class="service-featured-description">
+                Get focused attention from an experienced coach who understands
+                your goals and creates a training plan around your body,
+                lifestyle, and fitness level.
+            </p>
+
+            <div class="service-featured-features">
+
+                <div class="service-featured-feature">
+                    <div class="service-featured-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div>
+                        <h3>GOAL BASED PROGRAMS</h3>
+                        <p>Training designed around your specific fitness goals.</p>
+                    </div>
+                </div>
+
+                <div class="service-featured-feature">
+                    <div class="service-featured-icon">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <div>
+                        <h3>EXPERT GUIDANCE</h3>
+                        <p>Correct technique, better form, and continuous support.</p>
+                    </div>
+                </div>
+
+                <div class="service-featured-feature">
+                    <div class="service-featured-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div>
+                        <h3>TRACKED PROGRESS</h3>
+                        <p>Monitor your improvements and stay accountable.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="service-featured-action">
+                <a href="contact.html">
+                    START TRAINING
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <span>01 — 1:1 COACHING</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="group-fitness-section" id="groupFitness">
+    <div class="group-fitness-container">
+
+        <div class="group-fitness-heading">
+            <span>03 / COMMUNITY TRAINING</span>
+            <h2>STRONGER<br><strong>TOGETHER.</strong></h2>
+            <p>
+                High-energy group sessions designed to keep you motivated,
+                challenged, and connected with a community that shares your goals.
+            </p>
+        </div>
+
+        <div class="group-fitness-layout">
+
+            <div class="group-fitness-main-image">
+                <img src="Assets/fit13.webp" alt="Group fitness training">
+                <div class="group-fitness-overlay"></div>
+
+                <div class="group-fitness-image-content">
+                    <span>TRAIN TOGETHER</span>
+                    <h3>ENERGY<br>THAT MOVES<br>YOU.</h3>
+                </div>
+
+                <div class="group-fitness-number">03</div>
+            </div>
+
+            <div class="group-fitness-side">
+
+                <div class="group-fitness-feature">
+                    <div class="group-fitness-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div>
+                        <span>01</span>
+                        <h3>GROUP ENERGY</h3>
+                        <p>
+                            Train alongside motivated members and turn every
+                            workout into a shared experience.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group-fitness-feature">
+                    <div class="group-fitness-icon">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <div>
+                        <span>02</span>
+                        <h3>HIGH INTENSITY</h3>
+                        <p>
+                            Dynamic sessions designed to challenge your body
+                            and keep every workout exciting.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group-fitness-feature">
+                    <div class="group-fitness-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div>
+                        <span>03</span>
+                        <h3>BETTER FITNESS</h3>
+                        <p>
+                            Improve endurance, mobility, strength, and overall
+                            fitness through structured group sessions.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="error.html" class="group-fitness-button">
+                    JOIN A CLASS
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="group-fitness-bottom">
+            <span>COMMUNITY</span>
+            <div></div>
+            <span>CONSISTENCY</span>
+            <div></div>
+            <span>RESULTS</span>
+        </div>
+
+    </div>
+</section>
+<section class="strength-section" id="strengthConditioning">
+    <div class="strength-container">
+
+        <div class="strength-header">
+            <span>04 / PERFORMANCE</span>
+            <div class="strength-header-line"></div>
+            <span>STRENGTH & CONDITIONING</span>
+        </div>
+
+        <div class="strength-layout">
+
+            <div class="strength-content">
+                <span class="strength-label">PERFORMANCE TRAINING</span>
+
+                <h2>
+                    BUILD
+                    <span>POWER.</span>
+                    MOVE
+                    BETTER.
+                </h2>
+
+                <p>
+                    Our strength and conditioning programs combine progressive
+                    resistance training, functional movement, and conditioning
+                    to help you become stronger, faster, and more capable.
+                </p>
+
+                <div class="strength-points">
+                    <div class="strength-point">
+                        <span>01</span>
+                        <div>
+                            <h3>PROGRESSIVE STRENGTH</h3>
+                            <p>Structured training that develops strength safely and consistently.</p>
+                        </div>
+                    </div>
+
+                    <div class="strength-point">
+                        <span>02</span>
+                        <div>
+                            <h3>FUNCTIONAL MOVEMENT</h3>
+                            <p>Improve mobility, balance, stability, and everyday performance.</p>
+                        </div>
+                    </div>
+
+                    <div class="strength-point">
+                        <span>03</span>
+                        <div>
+                            <h3>PERFORMANCE CONDITIONING</h3>
+                            <p>Build endurance, speed, power, and total-body performance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="error.html" class="strength-button">
+                    START YOUR PROGRAM
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="strength-visual">
+                <div class="strength-image">
+                    <img src="Assets/fit10.webp" alt="Strength and conditioning training">
+                </div>
+
+                <div class="strength-overlay-card">
+                    <span>TRAIN HARD</span>
+                    <strong>STRONGER<br>EVERY DAY.</strong>
+                </div>
+
+                <div class="strength-number">04</div>
+            </div>
+
+        </div>
+
+        <div class="strength-stats">
+            <div>
+                <strong>100%</strong>
+                <span>FOCUSED TRAINING</span>
+            </div>
+
+            <div>
+                <strong>1:1</strong>
+                <span>COACHING SUPPORT</span>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <span>MEMBER ACCESS</span>
+            </div>
+
+            <div>
+                <strong>∞</strong>
+                <span>ROOM TO GROW</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="wellness-section" id="wellnessRecovery">
+    <div class="wellness-container">
+
+        <div class="wellness-top">
+            <span>05 / WELLNESS</span>
+            <span>RECOVERY & BALANCE</span>
+        </div>
+
+        <div class="wellness-layout">
+
+            <div class="wellness-content">
+                <span class="wellness-label">MIND. BODY. BALANCE.</span>
+
+                <h2>
+                    RECOVER
+                    <strong>BETTER.</strong>
+                    LIVE
+                    STRONGER.
+                </h2>
+
+                <p>
+                    Fitness is not only about how hard you train. Our wellness
+                    programs help your body recover, improve mobility, reduce
+                    tension, and build habits that support a stronger lifestyle.
+                </p>
+
+                <div class="wellness-services">
+
+                    <div class="wellness-service">
+                        <div class="wellness-service-icon">
+                            <i class="fa-solid fa-person-walking"></i>
+                        </div>
+                        <div>
+                            <h3>MOBILITY & FLEXIBILITY</h3>
+                            <p>Move freely and improve your range of motion.</p>
+                        </div>
+                    </div>
+
+                    <div class="wellness-service">
+                        <div class="wellness-service-icon">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <div>
+                            <h3>RECOVERY SESSIONS</h3>
+                            <p>Support muscle recovery and reduce training fatigue.</p>
+                        </div>
+                    </div>
+
+                    <div class="wellness-service">
+                        <div class="wellness-service-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div>
+                            <h3>HOLISTIC WELLNESS</h3>
+                            <p>Create sustainable habits for long-term wellbeing.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <a href="error.html" class="wellness-button">
+                    EXPLORE WELLNESS
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="wellness-visual">
+
+                <div class="wellness-image-main">
+                    <img src="Assets/fit16.webp" alt="Wellness and recovery">
+                </div>
+
+                <div class="wellness-circle">
+                    <span>MOVE</span>
+                    <i class="fa-solid fa-plus"></i>
+                    <span>RECOVER</span>
+                </div>
+
+                <div class="wellness-number">05</div>
+
+                <div class="wellness-quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>STRONG BODY. CALM MIND. BETTER LIFE.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="wellness-bottom">
+            <span>MOVE BETTER</span>
+            <div></div>
+            <span>RECOVER SMARTER</span>
+            <div></div>
+            <span>LIVE STRONGER</span>
+        </div>
+
+    </div>
+</section>  
+<section class="service-pricing" id="pricing">
+    <div class="pricing-container">
+
+        <div class="pricing-header">
+            <div class="pricing-heading">
+                <span class="pricing-label">06 / MEMBERSHIP</span>
+                <h2>
+                    CHOOSE YOUR
+                    <strong>LEVEL.</strong>
+                </h2>
+            </div>
+
+            <p class="pricing-intro">
+                Simple membership plans designed to give you the flexibility,
+                coaching, and support you need to reach your fitness goals.
+            </p>
+        </div>
+
+        <div class="pricing-grid">
+
+            <article class="pricing-card">
+                <div class="pricing-number">01</div>
+
+                <div class="pricing-card-top">
+                    <span class="pricing-plan">STARTER</span>
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+
+                <h3>ESSENTIAL</h3>
+
+                <p class="pricing-description">
+                    Everything you need to build a consistent fitness routine
+                    and start making progress.
+                </p>
+
+                <div class="pricing-price">
+                    <strong>₹1,499</strong>
+                    <span>/ MONTH</span>
+                </div>
+
+                <div class="pricing-divider"></div>
+
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-check"></i> Full gym access</li>
+                    <li><i class="fa-solid fa-check"></i> Modern equipment</li>
+                    <li><i class="fa-solid fa-check"></i> Locker access</li>
+                    <li><i class="fa-solid fa-check"></i> Fitness assessment</li>
+                </ul>
+
+                <a href="error.html" class="pricing-button">
+                    GET STARTED
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="pricing-card pricing-card-featured">
+                <div class="pricing-popular">MOST POPULAR</div>
+                <div class="pricing-number">02</div>
+
+                <div class="pricing-card-top">
+                    <span class="pricing-plan">PERFORMANCE</span>
+                    <i class="fa-solid fa-fire"></i>
+                </div>
+
+                <h3>PRO</h3>
+
+                <p class="pricing-description">
+                    A complete fitness experience with classes, coaching,
+                    and progress tracking.
+                </p>
+
+                <div class="pricing-price">
+                    <strong>₹2,499</strong>
+                    <span>/ MONTH</span>
+                </div>
+
+                <div class="pricing-divider"></div>
+
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-check"></i> Unlimited gym access</li>
+                    <li><i class="fa-solid fa-check"></i> Group fitness classes</li>
+                    <li><i class="fa-solid fa-check"></i> Monthly progress tracking</li>
+                    <li><i class="fa-solid fa-check"></i> Nutrition guidance</li>
+                    <li><i class="fa-solid fa-check"></i> Recovery sessions</li>
+                </ul>
+
+                <a href="error.html" class="pricing-button">
+                    JOIN PRO
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="pricing-card">
+                <div class="pricing-number">03</div>
+
+                <div class="pricing-card-top">
+                    <span class="pricing-plan">ELITE</span>
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <h3>ELITE</h3>
+
+                <p class="pricing-description">
+                    Premium personal coaching and a completely personalized
+                    approach to your fitness journey.
+                </p>
+
+                <div class="pricing-price">
+                    <strong>₹4,999</strong>
+                    <span>/ MONTH</span>
+                </div>
+
+                <div class="pricing-divider"></div>
+
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-check"></i> Unlimited gym access</li>
+                    <li><i class="fa-solid fa-check"></i> Personal training</li>
+                    <li><i class="fa-solid fa-check"></i> Custom workout plan</li>
+                    <li><i class="fa-solid fa-check"></i> Personalized nutrition</li>
+                    <li><i class="fa-solid fa-check"></i> Priority trainer support</li>
+                </ul>
+
+                <a href="error.html" class="pricing-button">
+                    GO ELITE
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+        </div>
+
+        <div class="pricing-bottom">
+            <span>NO LONG-TERM CONTRACTS</span>
+            <div></div>
+            <span>FLEXIBLE MEMBERSHIPS</span>
+            <div></div>
+            <span>TRAIN WITH PURPOSE</span>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="what-we-provide" id="whatWeProvide">
+    <div class="provide-container">
+
+        <div class="provide-top">
+            <span>08 / WHAT WE PROVIDE</span>
+            <span>EVERYTHING YOU NEED TO MOVE FORWARD</span>
+        </div>
+
+        <div class="provide-heading">
+            <div>
+                <span class="provide-label">MORE THAN A GYM.</span>
+                <h2>
+                    WE PROVIDE
+                    <strong>THE TOOLS.</strong>
+                </h2>
+            </div>
+
+            <p>
+                From expert coaching and modern equipment to recovery support
+                and personalized guidance, everything is designed to help you
+                train smarter and build a stronger lifestyle.
+            </p>
+        </div>
+
+        <div class="provide-grid">
+
+            <article class="provide-card provide-card-large">
+                <div class="provide-card-number">01</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div class="provide-content">
+                    <span>TRAINING</span>
+                    <h3>MODERN<br>EQUIPMENT</h3>
+                    <p>
+                        Train with premium strength, cardio, and functional
+                        equipment built for every fitness level.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                   <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                </div>
+            </article>
+
+            <article class="provide-card">
+                <div class="provide-card-number">02</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="provide-content">
+                    <span>EXPERTISE</span>
+                    <h3>EXPERT<br>COACHING</h3>
+                    <p>
+                        Get practical guidance from experienced trainers who
+                        understand your goals.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                    <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                </div>
+            </article>
+
+            <article class="provide-card">
+                <div class="provide-card-number">03</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <div class="provide-content">
+                    <span>COMMUNITY</span>
+                    <h3>GROUP<br>FITNESS</h3>
+                    <p>
+                        High-energy classes that keep you motivated,
+                        challenged, and connected.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                     <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                </div>
+            </article>
+
+            <article class="provide-card">
+                <div class="provide-card-number">04</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div class="provide-content">
+                    <span>WELLNESS</span>
+                    <h3>RECOVERY &<br>WELLNESS</h3>
+                    <p>
+                        Mobility and recovery support to help your body perform
+                        better and recover smarter.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                    <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                </div>
+            </article>
+
+            <article class="provide-card provide-card-accent">
+                <div class="provide-card-number">05</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="provide-content">
+                    <span>PROGRESS</span>
+                    <h3>RESULTS<br>TRACKING</h3>
+                    <p>
+                        Track your progress, understand your improvements,
+                        and stay accountable.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                     <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                </div>
+            </article>
+
+            <article class="provide-card">
+                <div class="provide-card-number">06</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-apple-whole"></i>
+                </div>
+                <div class="provide-content">
+                    <span>LIFESTYLE</span>
+                    <h3>NUTRITION<br>GUIDANCE</h3>
+                    <p>
+                        Practical nutrition guidance that supports your
+                        training and long-term lifestyle.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                     <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="provide-bottom">
+            <span>TRAIN SMARTER</span>
+            <div></div>
+            <span>RECOVER BETTER</span>
+            <div></div>
+            <span>LIVE STRONGER</span>
+        </div>
+
+    </div>
+</section>
+<section class="what-we-provide" id="whatWeProvide">
+    <div class="provide-container">
+
+        <div class="provide-top">
+            <span>08 / WHAT WE PROVIDE</span>
+            <span>EVERYTHING YOU NEED TO MOVE FORWARD</span>
+        </div>
+
+        <div class="provide-heading">
+            <div>
+                <span class="provide-label">MORE THAN A GYM.</span>
+                <h2>
+                    WE PROVIDE
+                    <strong>THE TOOLS.</strong>
+                </h2>
+            </div>
+
+            <p>
+                From expert coaching and modern equipment to recovery support
+                and personalized guidance, everything is designed to help you
+                train smarter and build a stronger lifestyle.
+            </p>
+        </div>
+
+        <div class="provide-grid">
+
+            <article class="provide-card provide-card-large">
+                <div class="provide-card-number">01</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div class="provide-content">
+                    <span>TRAINING</span>
+                    <h3>MODERN<br>EQUIPMENT</h3>
+                    <p>
+                        Train with premium strength, cardio, and functional
+                        equipment built for every fitness level.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                    <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                </div>
+            </article>
+
+            <article class="provide-card">
+                <div class="provide-card-number">02</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="provide-content">
+                    <span>EXPERTISE</span>
+                    <h3>EXPERT<br>COACHING</h3>
+                    <p>
+                        Get practical guidance from experienced trainers who
+                        understand your goals.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                     <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                </div>
+            </article>
+
+            <article class="provide-card">
+                <div class="provide-card-number">03</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <div class="provide-content">
+                    <span>COMMUNITY</span>
+                    <h3>GROUP<br>FITNESS</h3>
+                    <p>
+                        High-energy classes that keep you motivated,
+                        challenged, and connected.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                    <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                </div>
+            </article>
+
+            <article class="provide-card">
+                <div class="provide-card-number">04</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div class="provide-content">
+                    <span>WELLNESS</span>
+                    <h3>RECOVERY &<br>WELLNESS</h3>
+                    <p>
+                        Mobility and recovery support to help your body perform
+                        better and recover smarter.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                    <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                </div>
+            </article>
+
+            <article class="provide-card provide-card-accent">
+                <div class="provide-card-number">05</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="provide-content">
+                    <span>PROGRESS</span>
+                    <h3>RESULTS<br>TRACKING</h3>
+                    <p>
+                        Track your progress, understand your improvements,
+                        and stay accountable.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                     <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                </div>
+            </article>
+
+            <article class="provide-card">
+                <div class="provide-card-number">06</div>
+                <div class="provide-icon">
+                    <i class="fa-solid fa-apple-whole"></i>
+                </div>
+                <div class="provide-content">
+                    <span>LIFESTYLE</span>
+                    <h3>NUTRITION<br>GUIDANCE</h3>
+                    <p>
+                        Practical nutrition guidance that supports your
+                        training and long-term lifestyle.
+                    </p>
+                </div>
+                <div class="provide-arrow">
+                    <a href="error.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                  
+                </div>
+            </article>
+
+        </div>
+
+        <div class="provide-bottom">
+            <span>TRAIN SMARTER</span>
+            <div></div>
+            <span>RECOVER BETTER</span>
+            <div></div>
+            <span>LIVE STRONGER</span>
+        </div>
+
+    </div>
+</section>
+<section class="service-faq" id="faq">
+    <div class="faq-container">
+
+        <div class="faq-top">
+            <span>09 / FAQ</span>
+            <span>QUESTIONS. ANSWERS. CLARITY.</span>
+        </div>
+
+        <div class="faq-heading">
+            <div>
+                <span class="faq-label">NEED TO KNOW?</span>
+                <h2>
+                    WE HAVE
+                    <strong>ANSWERS.</strong>
+                </h2>
+            </div>
+
+            <p>
+                Find answers to the most common questions about memberships,
+                training, classes, facilities, and getting started.
+            </p>
+        </div>
+
+        <div class="faq-layout">
+
+            <div class="faq-intro">
+                <div class="faq-intro-number">09</div>
+
+                <div class="faq-intro-icon">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+
+                <h3>STILL HAVE<br>QUESTIONS?</h3>
+
+                <p>
+                    Our team is here to help you choose the right membership
+                    and understand everything you need before you start.
+                </p>
+
+                <a href="contact.html" class="faq-contact-btn">
+                    CONTACT US
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="faq-list">
+
+                <div class="faq-item active">
+                    <button class="faq-question" type="button">
+                        <span class="faq-number">01</span>
+                        <span class="faq-title">
+                            WHICH MEMBERSHIP PLAN IS RIGHT FOR ME?
+                        </span>
+                        <span class="faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Our Essential plan is ideal if you want regular
+                            gym access. Pro is suitable for members who want
+                            classes, progress tracking, nutrition guidance,
+                            and recovery support. Elite is designed for
+                            members who want personalized training and
+                            one-to-one coaching.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span class="faq-number">02</span>
+                        <span class="faq-title">
+                            DO YOU OFFER PERSONAL TRAINING?
+                        </span>
+                        <span class="faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. Our personal training program provides
+                            customized workouts, professional coaching,
+                            progress tracking, and guidance based on your
+                            individual fitness goals.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span class="faq-number">03</span>
+                        <span class="faq-title">
+                            ARE GROUP FITNESS CLASSES INCLUDED?
+                        </span>
+                        <span class="faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Group fitness classes are included with selected
+                            membership plans. Classes are designed for
+                            different fitness levels and focus on strength,
+                            conditioning, mobility, and overall fitness.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span class="faq-number">04</span>
+                        <span class="faq-title">
+                            DO I NEED FITNESS EXPERIENCE TO JOIN?
+                        </span>
+                        <span class="faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            No. Beginners are welcome. Our trainers can help
+                            you understand the equipment, learn correct
+                            exercise techniques, and build a training routine
+                            that matches your current fitness level.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span class="faq-number">05</span>
+                        <span class="faq-title">
+                            DO YOU PROVIDE NUTRITION GUIDANCE?
+                        </span>
+                        <span class="faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. Selected memberships include practical
+                            nutrition guidance designed to complement your
+                            workouts and support sustainable lifestyle habits.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span class="faq-number">06</span>
+                        <span class="faq-title">
+                            CAN I CHANGE OR UPGRADE MY MEMBERSHIP?
+                        </span>
+                        <span class="faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. You can speak with our membership team about
+                            upgrading your plan or choosing another option
+                            that better matches your current training goals.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="faq-bottom">
+            <span>NO CONFUSION</span>
+            <div></div>
+            <span>JUST CLEAR ANSWERS</span>
+            <div></div>
+            <span>START WITH CONFIDENCE</span>
+        </div>
+
+    </div>
+</section>
+<section class="service-cta" id="serviceCta">
+    <div class="service-cta-bg">
+        <img src="Assets/fit17.webp" alt="Fitness training">
+    </div>
+
+    <div class="service-cta-overlay"></div>
+
+    <div class="service-cta-container">
+
+        <div class="service-cta-top">
+            <span>10 / START YOUR JOURNEY</span>
+            <span>YOUR NEXT LEVEL STARTS HERE</span>
+        </div>
+
+        <div class="service-cta-content">
+
+            <span class="service-cta-label">NO MORE EXCUSES.</span>
+
+            <h2>
+                TRAIN HARD.
+                <strong>LIVE STRONG.</strong>
+            </h2>
+
+            <p>
+                Stop waiting for the perfect moment. Start building the
+                stronger, healthier version of yourself today.
+            </p>
+
+            <div class="service-cta-actions">
+                <a href="error.html" class="service-cta-primary">
+                    JOIN NOW
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="error.html" class="service-cta-secondary">
+                    TALK TO US
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="service-cta-bottom">
+            <span>DISCIPLINE</span>
+            <span>CONSISTENCY</span>
+            <span>STRENGTH</span>
+            <span>RESULTS</span>
+        </div>
+
+    </div>
+</section>
+
+<footer class="fitness-footer" id="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="Assets/blacklogo.webp" alt="Fitness & Wellness Logo">
+                </a>
+
+                <p>
+                    Train stronger. Live healthier. Become the best version
+                    of yourself with expert coaching, premium facilities,
+                    and a community that keeps you motivated.
+                </p>
+
+                <a href="contact.html" class="footer-cta">
+                    START YOUR JOURNEY
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="footer-column">
+                <h3>QUICK LINKS</h3>
+
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span>01</span>
+                            HOME
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            <span>02</span>
+                            ABOUT US
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">
+                            <span>03</span>
+                            SERVICES
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            <span>04</span>
+                            BLOG
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            <span>05</span>
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>EXTRA CONTENT</h3>
+
+                <ul>
+                    <li>
+                        <a href="error.html">
+                            <span>01</span>
+                            MEMBERSHIP
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="error.html">
+                            <span>02</span>
+                            TRAINERS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="error.html">
+                            <span>03</span>
+                            FITNESS PROGRAMS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="error.html">
+                            <span>04</span>
+                            WORKOUT PLANS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="error.html">
+                            <span>05</span>
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-social-column">
+                <h3>FOLLOW US</h3>
+
+                <p>
+                    Follow our fitness community for workouts, motivation,
+                    training tips, and updates.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="error.html" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="error.html" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="error.html" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="error.html" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="error.html" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-contact-strip">
+
+            <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                    <span>VISIT US</span>
+                    <strong>SALEM, INDIA</strong>
+                </div>
+            </div>
+
+            <div class="footer-contact-item">
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+                    <span>CALL US</span>
+                    <a href="error.html">+91 98765 43210</a>
+                </div>
+            </div>
+
+            <div class="footer-contact-item">
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+                    <span>EMAIL US</span>
+                    <a href="error.html">
+                        hello@stackly.com
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Fitness & Wellness Center. All Rights Reserved.
+            </p>
+
+            <div class="footer-legal">
+                <a href="error.html">Privacy Policy</a>
+                <span></span>
+                <a href="error.html">Terms & Conditions</a>
+            </div>
+
+            <a href="#top" class="footer-top" aria-label="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="nav.js"></script>
+<script src="service.js"></script>
+</body>
+</html>

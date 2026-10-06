@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Schedule | Fitness & Wellness Center</title>
+    <link rel="stylesheet" href="my-schedule.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard-shell">
+
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="sidebar-logo">
+            <a href="user-dashboard.html">
+                <img src="Assets/blacklogo.webp" alt="Stackly">
+            </a>
+        </div>
+
+        <div class="sidebar-profile">
+            <div class="profile-avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="profile-content">
+                <strong id="sidebarUserName">User</strong>
+                <span>Fitness Member</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-group">
+                <span class="sidebar-label">WORKSPACE</span>
+
+                <a href="user-dashboard.html" class="sidebar-link">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="my-workout.html" class="sidebar-link">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <span>My Workout</span>
+                </a>
+
+                <a href="my-schedule.html" class="sidebar-link active">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>My Schedule</span>
+                </a>
+            </div>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="login.html" class="logout-link">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button type="button" class="mobile-menu" id="mobileMenuButton" aria-label="Open menu">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <a href="user-dashboard.html" class="mobile-logo">
+                    <img src="Assets/blacklogo.webp" alt="Stackly">
+                </a>
+
+                <div class="header-heading">
+                    <span>MEMBER WORKSPACE</span>
+                    <h1>MY SCHEDULE</h1>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <a href="error.html" class="header-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="error.html" class="header-icon">
+                    <i class="fa-regular fa-bell"></i>
+                </a>
+
+                <a href="error.html" class="header-user">
+                    <div class="header-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+                        <strong id="headerUserName">User</strong>
+                        <span>Fitness Member</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </header>
+
+        <section class="schedule-page">
+
+            <div class="schedule-hero">
+
+                <div class="schedule-hero-content">
+                    <span class="section-label">MEMBER SCHEDULE</span>
+                    <h2>PLAN YOUR <strong>WEEK.</strong></h2>
+                    <p>
+                        Stay consistent with your training sessions, classes,
+                        recovery time, and upcoming fitness activities.
+                    </p>
+                </div>
+
+                <a href="error.html" class="primary-button">
+                    BOOK A SESSION
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="schedule-summary">
+
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-calendar-day"></i>
+                    </div>
+                    <span>TODAY</span>
+                    <strong>02</strong>
+                    <small>SESSIONS PLANNED</small>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <span>THIS WEEK</span>
+                    <strong>04</strong>
+                    <small>WORKOUTS</small>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <span>GROUP CLASSES</span>
+                    <strong>02</strong>
+                    <small>BOOKED</small>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <span>CONSISTENCY</span>
+                    <strong>86<span>%</span></strong>
+                    <small>THIS MONTH</small>
+                </div>
+
+            </div>
+
+            <div class="schedule-layout">
+
+                <section class="calendar-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span>TRAINING CALENDAR</span>
+                            <h3>OCTOBER <strong>2026</strong></h3>
+                        </div>
+
+                        <div class="calendar-actions">
+                            <a href="error.html" aria-label="Previous month">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </a>
+                            <a href="error.html" aria-label="Next month">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="calendar-weekdays">
+                        <span>MON</span>
+                        <span>TUE</span>
+                        <span>WED</span>
+                        <span>THU</span>
+                        <span>FRI</span>
+                        <span>SAT</span>
+                        <span>SUN</span>
+                    </div>
+
+                    <div class="calendar-grid">
+
+                        <div class="calendar-day muted">28</div>
+                        <div class="calendar-day muted">29</div>
+                        <div class="calendar-day muted">30</div>
+
+                        <div class="calendar-day">
+                            <span>1</span>
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>2</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>3</span>
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>4</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>5</span>
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+
+                        <div class="calendar-day today">
+                            <span>6</span>
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>7</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>8</span>
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>9</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>10</span>
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>11</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>12</span>
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>13</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>14</span>
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>15</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>16</span>
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>17</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>18</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>19</span>
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>20</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>21</span>
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>22</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>23</span>
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>24</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>25</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>26</span>
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>27</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>28</span>
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>29</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>30</span>
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span>31</span>
+                        </div>
+
+                        <div class="calendar-day muted">1</div>
+                        <div class="calendar-day muted">2</div>
+                        <div class="calendar-day muted">3</div>
+                        <div class="calendar-day muted">4</div>
+                        <div class="calendar-day muted">5</div>
+                        <div class="calendar-day muted">6</div>
+                        <div class="calendar-day muted">7</div>
+
+                    </div>
+
+                    <div class="calendar-legend">
+                        <span><i class="legend-workout"></i> Workout</span>
+                        <span><i class="legend-class"></i> Group Class</span>
+                        <span><i class="legend-today"></i> Today</span>
+                    </div>
+
+                </section>
+
+                <aside class="schedule-side">
+
+                    <div class="upcoming-card">
+
+                        <div class="side-heading">
+                            <div>
+                                <span>UPCOMING</span>
+                                <h3>YOUR <strong>SESSIONS</strong></h3>
+                            </div>
+
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+
+                        <a href="error.html" class="session-item">
+                            <div class="session-date">
+                                <strong>06</strong>
+                                <span>TUE</span>
+                            </div>
+
+                            <div class="session-info">
+                                <strong>Full Body Strength</strong>
+                                <span>06:30 AM · Training Floor</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="error.html" class="session-item">
+                            <div class="session-date">
+                                <strong>08</strong>
+                                <span>THU</span>
+                            </div>
+
+                            <div class="session-info">
+                                <strong>HIIT Training</strong>
+                                <span>07:00 AM · Studio 02</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="error.html" class="session-item">
+                            <div class="session-date">
+                                <strong>10</strong>
+                                <span>SAT</span>
+                            </div>
+
+                            <div class="session-info">
+                                <strong>Personal Training</strong>
+                                <span>08:00 AM · Training Floor</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="error.html" class="session-item">
+                            <div class="session-date">
+                                <strong>12</strong>
+                                <span>MON</span>
+                            </div>
+
+                            <div class="session-info">
+                                <strong>Mobility & Recovery</strong>
+                                <span>06:00 PM · Recovery Zone</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                    <a href="error.html" class="reminder-card">
+                        <div>
+                            <span>FITNESS REMINDER</span>
+                            <strong>CONSISTENCY<br>BUILDS RESULTS.</strong>
+                            <small>Your next session is waiting.</small>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </aside>
+
+            </div>
+
+            <section class="schedule-bottom">
+
+                <div class="week-progress-card">
+
+                    <div class="week-progress-heading">
+                        <div>
+                            <span>WEEKLY ACTIVITY</span>
+                            <h3>KEEP <strong>MOVING.</strong></h3>
+                        </div>
+
+                        <strong>3 / 4</strong>
+                    </div>
+
+                    <div class="activity-days">
+
+                        <div class="activity-day completed">
+                            <span>MON</span>
+                            <div><i class="fa-solid fa-check"></i></div>
+                        </div>
+
+                        <div class="activity-day completed">
+                            <span>TUE</span>
+                            <div><i class="fa-solid fa-check"></i></div>
+                        </div>
+
+                        <div class="activity-day completed">
+                            <span>WED</span>
+                            <div><i class="fa-solid fa-check"></i></div>
+                        </div>
+
+                        <div class="activity-day current">
+                            <span>THU</span>
+                            <div></div>
+                        </div>
+
+                        <div class="activity-day">
+                            <span>FRI</span>
+                            <div></div>
+                        </div>
+
+                        <div class="activity-day">
+                            <span>SAT</span>
+                            <div></div>
+                        </div>
+
+                        <div class="activity-day">
+                            <span>SUN</span>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="my-schedule.js"></script>
+</body>
+</html>

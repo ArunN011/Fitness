@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Fitness & Wellness Center</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="register-page">
+
+    <div class="register-visual">
+        <div class="visual-overlay"></div>
+
+        <div class="visual-content">
+            <a href="index.html" class="visual-logo">
+                <img src="Assets/blacklogo.webp" alt="Stackly">
+            </a>
+
+            <div class="visual-center">
+                <span>START YOUR JOURNEY</span>
+                <h1>BUILD<br><strong>YOURSELF.</strong></h1>
+                <p>
+                    Create your account and take the first step toward
+                    a stronger, healthier, more confident you.
+                </p>
+            </div>
+
+            <div class="visual-bottom">
+                <span>DISCIPLINE</span>
+                <span>STRENGTH</span>
+                <span>CONSISTENCY</span>
+                <span>RESULTS</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="register-content">
+
+        <a href="index.html" class="mobile-logo">
+            <img src="Assets/blacklogo.webp" alt="Stackly">
+        </a>
+
+        <div class="register-box">
+
+            <div class="register-heading">
+                <span>01 / CREATE ACCOUNT</span>
+                <h2>JOIN THE <strong>COMMUNITY.</strong></h2>
+                <p>
+                    Create your account to access your fitness workspace
+                    and manage your training journey.
+                </p>
+            </div>
+
+            <form id="registerForm" novalidate>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="fullName">FULL NAME</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-user"></i>
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                            >
+                        </div>
+                        <small class="field-error" id="fullNameError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">EMAIL ADDRESS</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                            >
+                        </div>
+                        <small class="field-error" id="emailError"></small>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="phone">PHONE NUMBER</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-phone"></i>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter phone number"
+                                maxlength="10"
+                                autocomplete="tel"
+                            >
+                        </div>
+                        <small class="field-error" id="phoneError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">ACCOUNT ROLE</label>
+                        <div class="input-wrapper select-wrapper">
+                            <i class="fa-solid fa-user-shield"></i>
+                            <select id="role" name="role">
+                                <option value="">Select role</option>
+                                <option value="user">User</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                        </div>
+                        <small class="field-error" id="roleError"></small>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="password">PASSWORD</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-lock"></i>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                            >
+                            <button type="button" class="password-toggle" data-target="password" aria-label="Show password">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-track">
+                                <span id="strengthBar"></span>
+                            </div>
+                            <span id="strengthText">Password strength</span>
+                        </div>
+                        <small class="field-error" id="passwordError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-lock"></i>
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                            >
+                            <button type="button" class="password-toggle" data-target="confirmPassword" aria-label="Show password">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                        <small class="field-error" id="confirmPasswordError"></small>
+                    </div>
+
+                </div>
+
+                <label class="terms-row">
+                    <input type="checkbox" id="terms">
+                    <span class="custom-check">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                    <span>
+                        I agree to the
+                        <a href="error.html">Terms & Conditions</a>
+                        and
+                        <a href="error.html">Privacy Policy</a>.
+                    </span>
+                </label>
+
+                <small class="field-error terms-error" id="termsError"></small>
+
+                <button type="submit" class="register-button" id="registerButton">
+                    <span>CREATE ACCOUNT</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span class="button-loader"></span>
+                </button>
+
+                <div class="form-status" id="formStatus"></div>
+
+            </form>
+
+            <div class="login-link">
+                <span>ALREADY HAVE AN ACCOUNT?</span>
+                <a href="login.html">
+                    LOGIN HERE
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <a href="index.html" class="back-home">
+                <i class="fa-solid fa-arrow-left"></i>
+                BACK TO HOME
+            </a>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="register.js"></script>
+</body>
+</html>

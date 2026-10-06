@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitWell | User Dashboard</title>
+    <link rel="icon" href="Assets/blacklogo.webp">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="user-dashboard.css">
+</head>
+<body>
+
+<div class="dashboard-shell">
+
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="sidebar-brand">
+            <a href="user-dashboard.html">
+                <img src="Assets/blacklogo.webp" alt="Stackly">
+            </a>
+        </div>
+
+        <div class="sidebar-profile">
+            <div class="profile-avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="profile-info">
+                <strong id="sidebarUserName">User</strong>
+                <span>Fitness Member</span>
+            </div>
+        </div>
+
+        <div class="sidebar-title">MY FITNESS</div>
+
+        <nav class="sidebar-nav">
+            <a href="user-dashboard.html" class="sidebar-link active">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="my-workout.html" class="sidebar-link">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>My Workouts</span>
+            </a>
+
+            <a href="my-schedule.html" class="sidebar-link">
+                <i class="fa-solid fa-id-card"></i>
+                <span>My Schedule</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="login.html" class="logout-link" id="logoutButton">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button
+                    type="button"
+                    class="mobile-menu"
+                    id="mobileMenuButton"
+                    aria-label="Open menu"
+                >
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <a href="user-dashboard.html" class="mobile-logo">
+                    <img src="Assets/blacklogo.webp" alt="Stackly">
+                </a>
+
+                <div class="header-heading">
+                    <span>MEMBER WORKSPACE</span>
+                    <h1>FITNESS DASHBOARD</h1>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <a href="error.html" class="header-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="error.html" class="header-icon notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <b></b>
+                </a>
+
+                <a href="error.html" class="header-user">
+                    <div class="header-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+                        <strong id="headerUserName">User</strong>
+                        <span>Fitness Member</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </header>
+
+        <section class="dashboard-content">
+
+            <section class="welcome-card">
+
+                <div class="welcome-content">
+
+                    <span class="welcome-date" id="currentDate"></span>
+
+                    <div class="welcome-status">
+                        <i></i>
+                        MEMBERSHIP ACTIVE
+                    </div>
+
+                    <h2>
+                        WELCOME BACK,
+                        <strong id="welcomeUser">USER</strong>
+                    </h2>
+
+                    <p>
+                        Stay consistent, track your progress, and keep pushing
+                        toward a stronger and healthier version of yourself.
+                    </p>
+
+                    <div class="welcome-actions">
+                        <a href="error.html" class="primary-btn">
+                            VIEW WORKOUT
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="error.html" class="secondary-btn">
+                            MEMBERSHIP
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="welcome-visual">
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="orbit orbit-three"></div>
+
+                    <div class="orbit-dot dot-one"></div>
+                    <div class="orbit-dot dot-two"></div>
+                    <div class="orbit-dot dot-three"></div>
+                    <div class="orbit-dot dot-four"></div>
+
+                    <div class="fitness-core">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <span>FIT</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="metric-grid">
+
+                <article class="metric-card">
+                    <div class="metric-top">
+                        <div class="metric-icon red">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <span class="metric-badge green">+12%</span>
+                    </div>
+
+                    <span class="metric-label">WORKOUT STREAK</span>
+                    <strong>12 <small>DAYS</small></strong>
+                    <p>Keep your consistency going.</p>
+                </article>
+
+                <article class="metric-card">
+                    <div class="metric-top">
+                        <div class="metric-icon blue">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+                        <span class="metric-badge">THIS WEEK</span>
+                    </div>
+
+                    <span class="metric-label">WORKOUTS</span>
+                    <strong>05</strong>
+                    <p>Training sessions completed.</p>
+                </article>
+
+                <article class="metric-card">
+                    <div class="metric-top">
+                        <div class="metric-icon green">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <span class="metric-badge green">ACTIVE</span>
+                    </div>
+
+                    <span class="metric-label">CALORIES BURNED</span>
+                    <strong>2.8K</strong>
+                    <p>Estimated weekly burn.</p>
+                </article>
+
+                <article class="metric-card">
+                    <div class="metric-top">
+                        <div class="metric-icon yellow">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <span class="metric-badge">+8%</span>
+                    </div>
+
+                    <span class="metric-label">FITNESS SCORE</span>
+                    <strong>84<small>%</small></strong>
+                    <p>Progress this month.</p>
+                </article>
+
+            </section>
+
+            <section class="dashboard-grid">
+
+                <article class="dashboard-card progress-card">
+
+                    <div class="card-header">
+                        <div>
+                            <span>YOUR PROGRESS</span>
+                            <h3>TRAINING OVERVIEW</h3>
+                        </div>
+
+                        <a href="error.html">VIEW DETAILS <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="progress-content">
+
+                        <div class="progress-ring">
+                            <svg viewBox="0 0 140 140">
+                                <circle cx="70" cy="70" r="58" class="ring-bg"></circle>
+                                <circle cx="70" cy="70" r="58" class="ring-value"></circle>
+                            </svg>
+
+                            <div class="ring-text">
+                                <strong>78%</strong>
+                                <span>GOAL</span>
+                            </div>
+                        </div>
+
+                        <div class="progress-details">
+
+                            <div class="progress-item">
+                                <div>
+                                    <span>Strength</span>
+                                    <strong>82%</strong>
+                                </div>
+                                <div class="progress-bar">
+                                    <i style="width:82%"></i>
+                                </div>
+                            </div>
+
+                            <div class="progress-item">
+                                <div>
+                                    <span>Cardio</span>
+                                    <strong>74%</strong>
+                                </div>
+                                <div class="progress-bar">
+                                    <i style="width:74%"></i>
+                                </div>
+                            </div>
+
+                            <div class="progress-item">
+                                <div>
+                                    <span>Mobility</span>
+                                    <strong>68%</strong>
+                                </div>
+                                <div class="progress-bar">
+                                    <i style="width:68%"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="dashboard-card session-card">
+
+                    <div class="card-header">
+                        <div>
+                            <span>NEXT SESSION</span>
+                            <h3>UPCOMING WORKOUT</h3>
+                        </div>
+
+                        <span class="live-badge">
+                            <i></i>
+                            UPCOMING
+                        </span>
+                    </div>
+
+                    <div class="session-main">
+
+                        <div class="session-icon">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+
+                        <div>
+                            <span class="session-type">STRENGTH TRAINING</span>
+                            <h4>FULL BODY POWER</h4>
+                            <p>
+                                <i class="fa-regular fa-clock"></i>
+                                45 Minutes
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="session-info">
+                        <div>
+                            <span>DATE</span>
+                            <strong>OCT 07</strong>
+                        </div>
+
+                        <div>
+                            <span>TIME</span>
+                            <strong>06:30 AM</strong>
+                        </div>
+
+                        <div>
+                            <span>LEVEL</span>
+                            <strong>INTERMEDIATE</strong>
+                        </div>
+                    </div>
+
+                    <a href="error.html" class="session-btn">
+                        VIEW SESSION
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+            </section>
+
+            <section class="dashboard-grid lower-grid">
+
+                <article class="dashboard-card activity-card">
+
+                    <div class="card-header">
+                        <div>
+                            <span>RECENT ACTIVITY</span>
+                            <h3>YOUR FITNESS JOURNEY</h3>
+                        </div>
+
+                        <a href="error.html">VIEW ALL <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="activity-list">
+
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fa-solid fa-dumbbell"></i>
+                            </div>
+
+                            <div>
+                                <strong>Strength Training</strong>
+                                <span>Chest & Triceps workout completed</span>
+                            </div>
+
+                            <small>Today</small>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fa-solid fa-person-running"></i>
+                            </div>
+
+                            <div>
+                                <strong>Cardio Session</strong>
+                                <span>30 minute endurance training</span>
+                            </div>
+
+                            <small>Yesterday</small>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fa-solid fa-fire"></i>
+                            </div>
+
+                            <div>
+                                <strong>Workout Streak</strong>
+                                <span>You reached a 12 day streak</span>
+                            </div>
+
+                            <small>2 Days Ago</small>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="dashboard-card membership-card">
+
+                    <div class="membership-top">
+                        <span>YOUR MEMBERSHIP</span>
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+
+                    <h3>PRO MEMBERSHIP</h3>
+
+                    <div class="membership-price">
+                        ₹2,499
+                        <small>/ MONTH</small>
+                    </div>
+
+                    <div class="membership-line">
+                        <span>Membership Status</span>
+                        <strong>ACTIVE</strong>
+                    </div>
+
+                    <div class="membership-line">
+                        <span>Renewal Date</span>
+                        <strong>OCT 28, 2026</strong>
+                    </div>
+
+                    <a href="error.html" class="membership-btn">
+                        MANAGE MEMBERSHIP
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+            </section>
+
+            <section class="dashboard-tip">
+
+                <div class="tip-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <div>
+                    <span>FITWELL DAILY TIP</span>
+                    <strong>Consistency beats intensity when building long-term fitness habits.</strong>
+                </div>
+
+                <a href="error.html">
+                    EXPLORE
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </section>
+
+            <footer class="dashboard-footer">
+                <span>FITWELL FITNESS & WELLNESS</span>
+                <span>TRAIN HARD. STAY CONSISTENT. GET STRONGER.</span>
+            </footer>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="user-dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fitness & Wellness Center</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <nav class="navbar fitness-navbar">
+        <div class="container-fluid navbar-container">
+
+            <a href="index.html" class="brand-logo">
+                <img src="Assets/blacklogo.webp" alt="FitWell Fitness & Wellness" class="logo-image">
+            </a>
+
+            <div class="desktop-navigation">
+                <ul class="navbar-menu">
+                    <li>
+                        <a href="index.html" class="nav-link ">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link ">About Us</a>
+                    </li>
+                    <li>
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="nav-link active">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-actions">
+                <a href="login.html" class="login-btn">Login</a>
+
+                <a href="register.html" class="register-btn">
+                    Register
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </nav>
+</header>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<aside class="mobile-sidebar" id="mobileSidebar" aria-hidden="true">
+
+    <div class="mobile-sidebar-header">
+
+        <a href="index.html" class="mobile-logo">
+            <img
+                src="Assets/blacklogo.webp"
+                alt="FitWell Fitness & Wellness"
+                class="logo-image"
+            >
+        </a>
+
+        <button
+            class="mobile-close-btn"
+            id="mobileCloseBtn"
+            type="button"
+            aria-label="Close navigation menu"
+        >
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+    </div>
+
+    <div class="mobile-navigation">
+
+        <a href="index.html" class="mobile-nav-link ">
+            <span>Home</span>
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <a href="about.html" class="mobile-nav-link ">
+            <span>About Us</span>
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <a href="services.html" class="mobile-nav-link">
+            <span>Services</span>
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <a href="blog.html" class="mobile-nav-link active">
+            <span>Blog</span>
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <a href="contact.html" class="mobile-nav-link">
+            <span>Contact</span>
+            <i class="bi bi-arrow-right"></i>
+        </a>
+
+    </div>
+
+    <div class="mobile-actions">
+
+        <a href="login.html" class="mobile-login-btn">
+            Login
+        </a>
+
+        <a href="register.html" class="mobile-register-btn">
+            Register
+            <i class="bi bi-arrow-up-right"></i>
+        </a>
+
+    </div>
+
+</aside>
+<section class="blog-hero" id="blogHero">
+    <div class="blog-hero-bg">
+        <img src="Assets/fit7.webp" alt="Fitness blog">
+    </div>
+
+    <div class="blog-hero-overlay"></div>
+
+    <div class="blog-hero-content">
+        <h1><span>BLOG</span> <strong>INSIGHTS</strong></h1>
+
+        <div class="blog-hero-breadcrumb">
+            <a href="index.html">HOME</a>
+            <span>/</span>
+            <span>BLOG</span>
+        </div>
+    </div>
+</section>
+<section class="blog-intro" id="blogIntro">
+    <div class="blog-intro-container">
+        <div class="blog-intro-top">
+            <span>01 / FITNESS JOURNAL</span>
+            <span>KNOWLEDGE. MOTIVATION. RESULTS.</span>
+        </div>
+
+        <div class="blog-intro-heading">
+            <div>
+                <span class="blog-intro-label">THE FITWELL JOURNAL</span>
+                <h2>TRAIN SMARTER.<br><strong>LIVE STRONGER.</strong></h2>
+            </div>
+
+            <p>
+                Discover practical fitness advice, expert training tips, nutrition
+                guidance, recovery strategies, and inspiring stories designed to
+                help you make better choices every day.
+            </p>
+        </div>
+
+        <div class="blog-feature-grid">
+            <article class="blog-feature-main">
+                <div class="blog-feature-image">
+                    <img src="Assets/fit18.webp" alt="Strength training">
+                    <span class="blog-feature-tag">FEATURED</span>
+                </div>
+
+                <div class="blog-feature-content">
+                    <div class="blog-meta">
+                        <span>TRAINING</span>
+                        <span>•</span>
+                        <span>08 MIN READ</span>
+                    </div>
+
+                    <h3>HOW TO BUILD A STRONGER TRAINING ROUTINE THAT ACTUALLY LASTS</h3>
+
+                    <p>
+                        Learn how to structure your workouts, stay consistent,
+                        manage intensity, and build a training routine that fits
+                        your lifestyle.
+                    </p>
+
+                    <a href="error.html" class="blog-read-more">
+                        READ ARTICLE
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <div class="blog-side-posts">
+                <article class="blog-small-card">
+                    <div class="blog-small-image">
+                        <img src="Assets/fit11.webp" alt="Healthy nutrition">
+                    </div>
+
+                    <div class="blog-small-content">
+                        <div class="blog-meta">
+                            <span>NUTRITION</span>
+                            <span>•</span>
+                            <span>05 MIN READ</span>
+                        </div>
+
+                        <h3>THE SIMPLE NUTRITION HABITS THAT SUPPORT BETTER RESULTS</h3>
+
+                        <a href="error.html" class="blog-read-more">
+                            READ ARTICLE
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="blog-small-card">
+                    <div class="blog-small-image">
+                        <img src="Assets/fit13.webp" alt="Fitness recovery">
+                    </div>
+
+                    <div class="blog-small-content">
+                        <div class="blog-meta">
+                            <span>RECOVERY</span>
+                            <span>•</span>
+                            <span>06 MIN READ</span>
+                        </div>
+
+                        <h3>WHY RECOVERY IS JUST AS IMPORTANT AS YOUR WORKOUT</h3>
+
+                        <a href="error.html" class="blog-read-more">
+                            READ ARTICLE
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="blog-intro-bottom">
+            <span>TRAIN</span>
+            <div></div>
+            <span>EAT WELL</span>
+            <div></div>
+            <span>RECOVER</span>
+            <div></div>
+            <span>REPEAT</span>
+        </div>
+    </div>
+</section>
+<section class="blog-categories" id="blogCategories">
+    <div class="blog-categories-container">
+        <div class="blog-categories-top">
+            <span>02 / EXPLORE TOPICS</span>
+            <span>FIND WHAT MOVES YOU</span>
+        </div>
+
+        <div class="blog-categories-heading">
+            <div>
+                <span class="blog-categories-label">CHOOSE YOUR FOCUS</span>
+                <h2>KNOWLEDGE THAT<br><strong>KEEPS YOU MOVING.</strong></h2>
+            </div>
+
+            <p>
+                From training and nutrition to recovery and mindset, explore
+                practical content created to help you train with purpose and
+                build a healthier lifestyle.
+            </p>
+        </div>
+
+        <div class="blog-category-grid">
+            <a href="error.html" class="blog-category-card category-training">
+                <div class="blog-category-image">
+                    <img src="Assets/fit6.webp" alt="Training">
+                </div>
+                <div class="blog-category-overlay"></div>
+                <div class="blog-category-number">01</div>
+                <div class="blog-category-content">
+                    <span>BUILD YOUR BASE</span>
+                    <h3>TRAINING</h3>
+                    <p>Workouts, exercise techniques and training strategies.</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </a>
+
+            <a href="error.html" class="blog-category-card category-nutrition">
+                <div class="blog-category-image">
+                    <img src="Assets/fit9.webp" alt="Nutrition">
+                </div>
+                <div class="blog-category-overlay"></div>
+                <div class="blog-category-number">02</div>
+                <div class="blog-category-content">
+                    <span>FUEL YOUR BODY</span>
+                    <h3>NUTRITION</h3>
+                    <p>Simple nutrition habits that support your goals.</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </a>
+
+            <a href="error.html" class="blog-category-card category-recovery">
+                <div class="blog-category-image">
+                    <img src="Assets/fit10.webp" alt="Recovery">
+                </div>
+                <div class="blog-category-overlay"></div>
+                <div class="blog-category-number">03</div>
+                <div class="blog-category-content">
+                    <span>REST WITH PURPOSE</span>
+                    <h3>RECOVERY</h3>
+                    <p>Mobility, rest and smarter ways to recover.</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </a>
+
+            <a href="error.html" class="blog-category-card category-mindset">
+                <div class="blog-category-image">
+                    <img src="Assets/FIT8.webp" alt="Fitness mindset">
+                </div>
+                <div class="blog-category-overlay"></div>
+                <div class="blog-category-number">04</div>
+                <div class="blog-category-content">
+                    <span>BUILD DISCIPLINE</span>
+                    <h3>MINDSET</h3>
+                    <p>Motivation, consistency and stronger daily habits.</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="blog-categories-bottom">
+            <span>TRAIN SMART</span>
+            <div></div>
+            <span>EAT BETTER</span>
+            <div></div>
+            <span>RECOVER WELL</span>
+            <div></div>
+            <span>THINK STRONG</span>
+        </div>
+    </div>
+</section>
+
+<section class="blog-latest" id="latestArticles">
+    <div class="blog-latest-container">
+        <div class="blog-latest-top">
+            <span>03 / LATEST ARTICLES</span>
+            <span>FRESH IDEAS FOR YOUR NEXT LEVEL</span>
+        </div>
+
+        <div class="blog-latest-heading">
+            <div>
+                <span class="blog-latest-label">FROM THE JOURNAL</span>
+                <h2>READ. LEARN.<br><strong>GET STRONGER.</strong></h2>
+            </div>
+
+            <a href="error.html" class="blog-view-all">
+                VIEW ALL ARTICLES
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="blog-articles-grid">
+            <article class="blog-article-card">
+                <div class="blog-article-image">
+                    <img src="Assets/fit2.webp" alt="Strength training workout">
+                    <span class="blog-article-category">TRAINING</span>
+                </div>
+
+                <div class="blog-article-content">
+                    <div class="blog-article-meta">
+                        <span>OCT 02, 2026</span>
+                        <span>•</span>
+                        <span>06 MIN READ</span>
+                    </div>
+
+                    <h3>5 SIMPLE WAYS TO MAKE YOUR WORKOUTS MORE EFFECTIVE</h3>
+
+                    <p>
+                        Small changes in your training routine can create better
+                        movement, stronger performance, and more consistent results.
+                    </p>
+
+                    <a href="error.html" class="blog-article-link">
+                        READ MORE
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-article-card">
+                <div class="blog-article-image">
+                    <img src="Assets/fit17.webp" alt="Healthy meal preparation">
+                    <span class="blog-article-category">NUTRITION</span>
+                </div>
+
+                <div class="blog-article-content">
+                    <div class="blog-article-meta">
+                        <span>SEP 28, 2026</span>
+                        <span>•</span>
+                        <span>05 MIN READ</span>
+                    </div>
+
+                    <h3>WHAT TO EAT BEFORE AND AFTER YOUR TRAINING SESSION</h3>
+
+                    <p>
+                        Understand how simple meal choices can help support energy,
+                        recovery, and your overall training goals.
+                    </p>
+
+                    <a href="error.html" class="blog-article-link">
+                        READ MORE
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-article-card">
+                <div class="blog-article-image">
+                    <img src="Assets/fit16.webp" alt="Recovery and stretching">
+                    <span class="blog-article-category">RECOVERY</span>
+                </div>
+
+                <div class="blog-article-content">
+                    <div class="blog-article-meta">
+                        <span>SEP 24, 2026</span>
+                        <span>•</span>
+                        <span>07 MIN READ</span>
+                    </div>
+
+                    <h3>THE RECOVERY HABITS EVERY ACTIVE PERSON SHOULD KNOW</h3>
+
+                    <p>
+                        Improve your recovery with practical habits that support
+                        mobility, rest, performance, and long-term consistency.
+                    </p>
+
+                    <a href="error.html" class="blog-article-link">
+                        READ MORE
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="blog-article-strip">
+            <span>01 / TRAINING</span>
+            <span>02 / NUTRITION</span>
+            <span>03 / RECOVERY</span>
+            <span>04 / MINDSET</span>
+        </div>
+    </div>
+</section>
+<section class="blog-faq" id="blogFaq">
+    <div class="blog-faq-container">
+        <div class="blog-faq-top">
+            <span>04 / FAQ</span>
+            <span>QUESTIONS. ANSWERS. CLARITY.</span>
+        </div>
+
+        <div class="blog-faq-heading">
+            <div>
+                <span class="blog-faq-label">NEED TO KNOW?</span>
+                <h2>YOUR QUESTIONS.<br><strong>OUR ANSWERS.</strong></h2>
+            </div>
+
+            <p>
+                Find quick answers about our fitness articles, training advice,
+                nutrition content, recovery guides, memberships, and getting started.
+            </p>
+        </div>
+
+        <div class="blog-faq-layout">
+            <div class="blog-faq-intro">
+                <div class="blog-faq-number">04</div>
+
+                <div class="blog-faq-icon">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+
+                <h3>CURIOUS?<br>WE CAN HELP.</h3>
+
+                <p>
+                    Still looking for something? Our team is ready to help you
+                    find the right information for your fitness journey.
+                </p>
+
+                <a href="contact.html" class="blog-faq-contact">
+                    CONTACT US
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="blog-faq-list">
+                <div class="blog-faq-item active">
+                    <button class="blog-faq-question" type="button">
+                        <span class="blog-faq-number-small">01</span>
+                        <span class="blog-faq-title">HOW OFTEN DO YOU PUBLISH NEW ARTICLES?</span>
+                        <span class="blog-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="blog-faq-answer">
+                        <p>
+                            We regularly publish new fitness content covering
+                            training, nutrition, recovery, mindset, and practical
+                            lifestyle advice to help you keep learning.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-faq-item">
+                    <button class="blog-faq-question" type="button">
+                        <span class="blog-faq-number-small">02</span>
+                        <span class="blog-faq-title">ARE THE FITNESS TIPS SUITABLE FOR BEGINNERS?</span>
+                        <span class="blog-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="blog-faq-answer">
+                        <p>
+                            Yes. Many of our articles are written with beginners
+                            in mind, while also providing useful ideas for people
+                            with more training experience.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-faq-item">
+                    <button class="blog-faq-question" type="button">
+                        <span class="blog-faq-number-small">03</span>
+                        <span class="blog-faq-title">DO YOU PROVIDE NUTRITION GUIDANCE?</span>
+                        <span class="blog-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="blog-faq-answer">
+                        <p>
+                            Yes. Our nutrition articles focus on practical food
+                            choices, meal habits, hydration, workout nutrition,
+                            and sustainable approaches to supporting your goals.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-faq-item">
+                    <button class="blog-faq-question" type="button">
+                        <span class="blog-faq-number-small">04</span>
+                        <span class="blog-faq-title">CAN I USE THESE ARTICLES TO CREATE MY WORKOUT PLAN?</span>
+                        <span class="blog-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="blog-faq-answer">
+                        <p>
+                            Our articles can provide useful education and ideas,
+                            but your training plan should be adjusted according to
+                            your fitness level, goals, experience, and individual needs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-faq-item">
+                    <button class="blog-faq-question" type="button">
+                        <span class="blog-faq-number-small">05</span>
+                        <span class="blog-faq-title">WHERE CAN I LEARN MORE ABOUT YOUR SERVICES?</span>
+                        <span class="blog-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="blog-faq-answer">
+                        <p>
+                            Visit our Services page to explore personal training,
+                            group fitness, strength and conditioning, wellness,
+                            recovery, and membership options.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-faq-item">
+                    <button class="blog-faq-question" type="button">
+                        <span class="blog-faq-number-small">06</span>
+                        <span class="blog-faq-title">CAN I CONTACT YOUR TEAM FOR FITNESS QUESTIONS?</span>
+                        <span class="blog-faq-toggle">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </button>
+
+                    <div class="blog-faq-answer">
+                        <p>
+                            Absolutely. Use our Contact page to send us your
+                            questions and our team will help you find the right
+                            information or service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-faq-bottom">
+            <span>LEARN MORE</span>
+            <div></div>
+            <span>TRAIN SMART</span>
+            <div></div>
+            <span>STAY CONSISTENT</span>
+        </div>
+    </div>
+</section>
+<footer class="fitness-footer" id="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="Assets/blacklogo.webp" alt="Fitness & Wellness Logo">
+                </a>
+
+                <p>
+                    Train stronger. Live healthier. Become the best version
+                    of yourself with expert coaching, premium facilities,
+                    and a community that keeps you motivated.
+                </p>
+
+                <a href="contact.html" class="footer-cta">
+                    START YOUR JOURNEY
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="footer-column">
+                <h3>QUICK LINKS</h3>
+
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span>01</span>
+                            HOME
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            <span>02</span>
+                            ABOUT US
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">
+                            <span>03</span>
+                            SERVICES
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            <span>04</span>
+                            BLOG
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            <span>05</span>
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>EXTRA CONTENT</h3>
+
+                <ul>
+                    <li>
+                        <a href="error.html">
+                            <span>01</span>
+                            MEMBERSHIP
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="error.html">
+                            <span>02</span>
+                            TRAINERS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="error.html">
+                            <span>03</span>
+                            FITNESS PROGRAMS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="error.html">
+                            <span>04</span>
+                            WORKOUT PLANS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="error.html">
+                            <span>05</span>
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-social-column">
+                <h3>FOLLOW US</h3>
+
+                <p>
+                    Follow our fitness community for workouts, motivation,
+                    training tips, and updates.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="error.html" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="error.html" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="error.html" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="error.html" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="error.html" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-contact-strip">
+
+            <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                    <span>VISIT US</span>
+                    <strong>SALEM, INDIA</strong>
+                </div>
+            </div>
+
+            <div class="footer-contact-item">
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+                    <span>CALL US</span>
+                    <a href="error.html">+91 98765 43210</a>
+                </div>
+            </div>
+
+            <div class="footer-contact-item">
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+                    <span>EMAIL US</span>
+                    <a href="error.html">
+                        hello@stackly.com
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Fitness & Wellness Center. All Rights Reserved.
+            </p>
+
+            <div class="footer-legal">
+                <a href="error.html">Privacy Policy</a>
+                <span></span>
+                <a href="error.html">Terms & Conditions</a>
+            </div>
+
+            <a href="#top" class="footer-top" aria-label="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="nav.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>

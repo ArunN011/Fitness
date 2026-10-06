@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #06203a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.error-page {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: #06203a;
+}
+
+.error-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.error-grid {
+    position: absolute;
+    inset: 0;
+    opacity: .08;
+    background-image:
+        linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px);
+    background-size: 70px 70px;
+}
+
+.error-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: .2;
+}
+
+.error-glow-one {
+    width: 450px;
+    height: 450px;
+    background: #ff003d;
+    top: -220px;
+    right: -120px;
+}
+
+.error-glow-two {
+    width: 400px;
+    height: 400px;
+    background: #174d75;
+    bottom: -200px;
+    left: -120px;
+}
+
+.error-container {
+    width: min(1240px, 90%);
+    min-height: 100vh;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.error-header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.error-logo img {
+    width: 115px;
+    display: block;
+    filter: brightness(0) invert(1);
+}
+
+.error-status {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: rgba(255,255,255,.55);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.error-status i {
+    color: #ff003d;
+    font-size: 7px;
+}
+
+.error-content {
+    flex: 1;
+    min-height: calc(100vh - 170px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.error-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-size: clamp(150px, 23vw, 330px);
+    line-height: .7;
+    letter-spacing: -10px;
+    color: #fff;
+    user-select: none;
+}
+
+.error-zero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: .75em;
+    height: .75em;
+    margin: 0 -.02em;
+    color: #ff003d;
+}
+
+.error-zero strong {
+    font: inherit;
+    color: #ff003d;
+}
+
+.error-zero i {
+    position: absolute;
+    z-index: 2;
+    font-family: "Font Awesome 6 Free";
+    font-size: .19em;
+    color: #fff;
+    transform: rotate(-10deg);
+}
+
+.error-label {
+    margin-top: 35px;
+    color: #ff003d;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.error-content h1 {
+    margin-top: 13px;
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-size: clamp(38px, 5vw, 70px);
+    line-height: .95;
+    letter-spacing: -.5px;
+}
+
+.error-content h1 strong {
+    color: #ff003d;
+}
+
+.error-content p {
+    max-width: 570px;
+    margin: 20px auto 0;
+    color: rgba(255,255,255,.62);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.error-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.error-back,
+.error-home {
+    min-width: 165px;
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 22px;
+    border: 1px solid rgba(255,255,255,.22);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1.4px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.error-back {
+    background: #ff003d;
+    color: #fff;
+    border-color: #ff003d;
+}
+
+.error-home {
+    background: transparent;
+    color: #fff;
+}
+
+.error-back:hover {
+    background: #fff;
+    color: #06203a;
+    border-color: #fff;
+    transform: translateY(-3px);
+}
+
+.error-home:hover {
+    background: #fff;
+    color: #06203a;
+    border-color: #fff;
+    transform: translateY(-3px);
+}
+
+.error-actions i {
+    transition: .3s ease;
+}
+
+.error-back:hover i {
+    transform: translateX(-4px);
+}
+
+.error-home:hover i {
+    transform: translateX(4px);
+}
+
+.error-footer {
+    height: 70px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255,255,255,.4);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.error-footer span::before {
+    content: "•";
+    color: #ff003d;
+    margin-right: 9px;
+}
+
+@media (max-width: 768px) {
+    .error-container {
+        width: 90%;
+    }
+
+    .error-header {
+        height: 80px;
+    }
+
+    .error-logo img {
+        width: 95px;
+    }
+
+    .error-status {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .error-content {
+        min-height: calc(100vh - 150px);
+        padding: 50px 0;
+    }
+
+    .error-number {
+        font-size: clamp(125px, 32vw, 220px);
+        letter-spacing: -5px;
+    }
+
+    .error-label {
+        margin-top: 30px;
+    }
+
+    .error-content h1 {
+        font-size: clamp(34px, 9vw, 55px);
+    }
+
+    .error-content p {
+        max-width: 520px;
+        font-size: 13px;
+    }
+
+    .error-actions {
+        width: 100%;
+        max-width: 420px;
+        flex-direction: column;
+    }
+
+    .error-back,
+    .error-home {
+        width: 100%;
+    }
+
+    .error-footer {
+        height: auto;
+        min-height: 70px;
+        padding: 18px 0;
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-container {
+        width: 92%;
+    }
+
+    .error-header {
+        height: 70px;
+    }
+
+    .error-logo img {
+        width: 88px;
+    }
+
+    .error-status {
+        font-size: 12px;
+        letter-spacing: .8px;
+    }
+
+    .error-number {
+        font-size: 125px;
+        letter-spacing: -3px;
+    }
+
+    .error-label {
+        margin-top: 27px;
+    }
+
+    .error-content h1 {
+        font-size: 35px;
+        line-height: 1;
+    }
+
+    .error-content p {
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .error-actions {
+        margin-top: 24px;
+    }
+
+    .error-back,
+    .error-home {
+        height: 52px;
+    }
+
+    .error-footer {
+        gap: 10px 18px;
+    }
+}
+
+@media (max-width: 350px) {
+    .error-number {
+        font-size: 105px;
+    }
+
+    .error-status {
+        display: none;
+    }
+
+    .error-content h1 {
+        font-size: 31px;
+    }
+}

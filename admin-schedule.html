@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule | Fitness & Wellness Center</title>
+    <link rel="stylesheet" href="admin-schedule.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard-shell">
+
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="sidebar-logo">
+            <a href="admin-dashboard.html">
+                <img src="Assets/blacklogo.webp" alt="Stackly">
+            </a>
+        </div>
+
+        <div class="sidebar-profile">
+            <div class="profile-avatar">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <div class="profile-content">
+                <strong id="sidebarAdminName">Admin</strong>
+                <span>Administrator</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+            <span class="sidebar-label">WORKSPACE</span>
+
+            <a href="admin-dashboard.html" class="sidebar-link">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="member.html" class="sidebar-link">
+                <i class="fa-solid fa-users"></i>
+                <span>Members</span>
+            </a>
+
+            <a href="admin-schedule.html" class="sidebar-link active">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Schedule</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="login.html" class="logout-link">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button type="button" class="mobile-menu" id="mobileMenuButton" aria-label="Open menu">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <a href="admin-dashboard.html" class="mobile-logo">
+                    <img src="Assets/blacklogo.webp" alt="Stackly">
+                </a>
+
+                <div class="header-heading">
+                    <span>ADMIN WORKSPACE</span>
+                    <h1>FITNESS SCHEDULE</h1>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <a href="error.html" class="header-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="error.html" class="header-icon">
+                    <i class="fa-regular fa-bell"></i>
+                </a>
+
+                <a href="error.html" class="header-user">
+                    <div class="header-avatar">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <div>
+                        <strong id="headerAdminName">Admin</strong>
+                        <span>Administrator</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </header>
+
+        <section class="schedule-page">
+
+            <div class="schedule-hero">
+
+                <div class="schedule-hero-content">
+
+                    <span>01 / CLASS SCHEDULE</span>
+
+                    <h2>
+                        PLAN. TRAIN.
+                        <strong>PERFORM.</strong>
+                    </h2>
+
+                    <p>
+                        Manage fitness classes, training sessions, trainers,
+                        and member schedules from one organized workspace.
+                    </p>
+
+                    <div class="schedule-actions">
+                        <a href="error.html" class="primary-btn">
+                            ADD CLASS
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+
+                        <a href="error.html" class="secondary-btn">
+                            MANAGE TRAINERS
+                            <i class="fa-solid fa-user-group"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="schedule-hero-mark">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>SCHEDULE</span>
+                </div>
+
+            </div>
+
+            <div class="schedule-stats">
+
+                <div class="schedule-stat">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <span>TODAY'S CLASSES</span>
+                    <strong>12</strong>
+                    <small>Scheduled sessions</small>
+                </div>
+
+                <div class="schedule-stat">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <span>BOOKED MEMBERS</span>
+                    <strong>186</strong>
+                    <small>Today's bookings</small>
+                </div>
+
+                <div class="schedule-stat">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                    </div>
+                    <span>ACTIVE TRAINERS</span>
+                    <strong>18</strong>
+                    <small>Available trainers</small>
+                </div>
+
+                <div class="schedule-stat">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <span>ATTENDANCE</span>
+                    <strong>92%</strong>
+                    <small>Weekly average</small>
+                </div>
+
+            </div>
+
+            <section class="calendar-section">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span>02 / TODAY'S PROGRAM</span>
+                        <h3>CLASS <strong>SCHEDULE.</strong></h3>
+                    </div>
+
+                    <a href="error.html" class="view-calendar">
+                        FULL CALENDAR
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="schedule-date-bar">
+
+                    <div class="date-navigation">
+                        <a href="error.html" class="date-arrow">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+
+                        <div>
+                            <span>MONDAY</span>
+                            <strong>06 OCT 2026</strong>
+                        </div>
+
+                        <a href="error.html" class="date-arrow">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <a href="error.html" class="today-btn">
+                        TODAY
+                    </a>
+
+                </div>
+
+                <div class="class-list">
+
+                    <a href="error.html" class="class-item">
+
+                        <div class="class-time">
+                            <strong>06:00</strong>
+                            <span>AM</span>
+                        </div>
+
+                        <div class="class-line">
+                            <span></span>
+                        </div>
+
+                        <div class="class-info">
+                            <div class="class-icon">
+                                <i class="fa-solid fa-dumbbell"></i>
+                            </div>
+
+                            <div>
+                                <span>STRENGTH</span>
+                                <h4>Morning Strength</h4>
+                                <p>Alex Morgan · Studio 01</p>
+                            </div>
+                        </div>
+
+                        <div class="class-capacity">
+                            <span>CAPACITY</span>
+                            <strong>24 / 30</strong>
+                            <div class="capacity-bar">
+                                <span style="width:80%"></span>
+                            </div>
+                        </div>
+
+                        <div class="class-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+                    <a href="error.html" class="class-item">
+
+                        <div class="class-time">
+                            <strong>08:30</strong>
+                            <span>AM</span>
+                        </div>
+
+                        <div class="class-line">
+                            <span></span>
+                        </div>
+
+                        <div class="class-info">
+                            <div class="class-icon">
+                                <i class="fa-solid fa-person-running"></i>
+                            </div>
+
+                            <div>
+                                <span>CARDIO</span>
+                                <h4>HIIT Training</h4>
+                                <p>Emma Wilson · Studio 02</p>
+                            </div>
+                        </div>
+
+                        <div class="class-capacity">
+                            <span>CAPACITY</span>
+                            <strong>18 / 25</strong>
+                            <div class="capacity-bar">
+                                <span style="width:72%"></span>
+                            </div>
+                        </div>
+
+                        <div class="class-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+                    <a href="error.html" class="class-item">
+
+                        <div class="class-time">
+                            <strong>11:00</strong>
+                            <span>AM</span>
+                        </div>
+
+                        <div class="class-line">
+                            <span></span>
+                        </div>
+
+                        <div class="class-info">
+                            <div class="class-icon">
+                                <i class="fa-solid fa-person-praying"></i>
+                            </div>
+
+                            <div>
+                                <span>WELLNESS</span>
+                                <h4>Yoga & Mobility</h4>
+                                <p>Sophia Reed · Studio 03</p>
+                            </div>
+                        </div>
+
+                        <div class="class-capacity">
+                            <span>CAPACITY</span>
+                            <strong>16 / 20</strong>
+                            <div class="capacity-bar">
+                                <span style="width:80%"></span>
+                            </div>
+                        </div>
+
+                        <div class="class-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+                    <a href="error.html" class="class-item">
+
+                        <div class="class-time">
+                            <strong>05:30</strong>
+                            <span>PM</span>
+                        </div>
+
+                        <div class="class-line">
+                            <span></span>
+                        </div>
+
+                        <div class="class-info">
+                            <div class="class-icon">
+                                <i class="fa-solid fa-fire"></i>
+                            </div>
+
+                            <div>
+                                <span>CONDITIONING</span>
+                                <h4>Functional Fitness</h4>
+                                <p>Ryan Carter · Performance Zone</p>
+                            </div>
+                        </div>
+
+                        <div class="class-capacity">
+                            <span>CAPACITY</span>
+                            <strong>27 / 30</strong>
+                            <div class="capacity-bar">
+                                <span style="width:90%"></span>
+                            </div>
+                        </div>
+
+                        <div class="class-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+                    <a href="error.html" class="class-item">
+
+                        <div class="class-time">
+                            <strong>07:30</strong>
+                            <span>PM</span>
+                        </div>
+
+                        <div class="class-line">
+                            <span></span>
+                        </div>
+
+                        <div class="class-info">
+                            <div class="class-icon">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+
+                            <div>
+                                <span>GROUP FITNESS</span>
+                                <h4>Power Circuit</h4>
+                                <p>Alex Morgan · Studio 01</p>
+                            </div>
+                        </div>
+
+                        <div class="class-capacity">
+                            <span>CAPACITY</span>
+                            <strong>29 / 30</strong>
+                            <div class="capacity-bar">
+                                <span style="width:97%"></span>
+                            </div>
+                        </div>
+
+                        <div class="class-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="schedule-bottom">
+
+                <div class="upcoming-section">
+
+                    <div class="section-heading">
+                        <div>
+                            <span>03 / UPCOMING</span>
+                            <h3>NEXT <strong>SESSIONS.</strong></h3>
+                        </div>
+
+                        <a href="error.html" class="view-calendar">
+                            VIEW ALL
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="upcoming-list">
+
+                        <a href="error.html" class="upcoming-item">
+                            <div class="upcoming-date">
+                                <strong>07</strong>
+                                <span>OCT</span>
+                            </div>
+
+                            <div class="upcoming-info">
+                                <span>06:30 AM · STRENGTH</span>
+                                <h4>Lower Body Power</h4>
+                                <p>Emma Wilson · Studio 01</p>
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="error.html" class="upcoming-item">
+                            <div class="upcoming-date">
+                                <strong>07</strong>
+                                <span>OCT</span>
+                            </div>
+
+                            <div class="upcoming-info">
+                                <span>06:00 PM · CARDIO</span>
+                                <h4>HIIT Performance</h4>
+                                <p>Ryan Carter · Studio 02</p>
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="error.html" class="upcoming-item">
+                            <div class="upcoming-date">
+                                <strong>08</strong>
+                                <span>OCT</span>
+                            </div>
+
+                            <div class="upcoming-info">
+                                <span>07:00 AM · WELLNESS</span>
+                                <h4>Mobility Flow</h4>
+                                <p>Sophia Reed · Studio 03</p>
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="schedule-insight">
+
+                    <span>WEEKLY PERFORMANCE</span>
+
+                    <div class="performance-number">
+                        <strong>92</strong>
+                        <span>%</span>
+                    </div>
+
+                    <h4>CLASS ATTENDANCE<br>IS ON TRACK.</h4>
+
+                    <p>
+                        Member attendance is currently above the weekly
+                        performance target.
+                    </p>
+
+                    <div class="performance-bar">
+                        <span></span>
+                    </div>
+
+                    <a href="error.html">
+                        VIEW ANALYTICS
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="admin-schedule.js"></script>
+</body>
+</html>

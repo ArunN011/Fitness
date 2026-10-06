@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members | Fitness & Wellness Center</title>
+    <link rel="stylesheet" href="member.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard-shell">
+
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="sidebar-logo">
+            <a href="admin-dashboard.html">
+                <img src="Assets/blacklogo.webp" alt="Stackly">
+            </a>
+        </div>
+
+        <div class="sidebar-profile">
+            <div class="profile-avatar">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <div class="profile-content">
+                <strong id="sidebarAdminName">Admin</strong>
+                <span>Administrator</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+            <span class="sidebar-label">WORKSPACE</span>
+
+            <a href="admin-dashboard.html" class="sidebar-link">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="member.html" class="sidebar-link active">
+                <i class="fa-solid fa-users"></i>
+                <span>Members</span>
+            </a>
+
+            <a href="admin-schedule.html" class="sidebar-link">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Schedule</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="login.html" class="logout-link">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button type="button" class="mobile-menu" id="mobileMenuButton" aria-label="Open menu">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <a href="admin-dashboard.html" class="mobile-logo">
+                    <img src="Assets/blacklogo.webp" alt="Stackly">
+                </a>
+
+                <div class="header-heading">
+                    <span>MEMBER WORKSPACE</span>
+                    <h1>MEMBER MANAGEMENT</h1>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <a href="error.html" class="header-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="error.html" class="header-icon">
+                    <i class="fa-regular fa-bell"></i>
+                </a>
+
+                <a href="error.html" class="header-user">
+                    <div class="header-avatar">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <div>
+                        <strong id="headerAdminName">Admin</strong>
+                        <span>Administrator</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </header>
+
+        <section class="member-page">
+
+            <div class="page-hero">
+
+                <div class="hero-content">
+                    <span>01 / MEMBER MANAGEMENT</span>
+
+                    <h2>
+                        MANAGE YOUR
+                        <strong>FITNESS COMMUNITY.</strong>
+                    </h2>
+
+                    <p>
+                        View member activity, manage memberships, and keep track
+                        of the people building stronger lifestyles at your center.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="error.html" class="primary-btn">
+                            ADD MEMBER
+                            <i class="fa-solid fa-user-plus"></i>
+                        </a>
+
+                        <a href="error.html" class="secondary-btn">
+                            EXPORT DATA
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-mark">
+                    <i class="fa-solid fa-users"></i>
+                    <span>FIT</span>
+                </div>
+
+            </div>
+
+            <div class="member-stats">
+
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <span>TOTAL MEMBERS</span>
+                    <strong>1,248</strong>
+                    <small>Registered members</small>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <span>ACTIVE MEMBERS</span>
+                    <strong>1,086</strong>
+                    <small>Currently active</small>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <span>NEW MEMBERS</span>
+                    <strong>48</strong>
+                    <small>Joined this month</small>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <span>RETENTION</span>
+                    <strong>94%</strong>
+                    <small>Monthly retention</small>
+                </div>
+
+            </div>
+
+            <section class="members-section">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span>02 / MEMBER DIRECTORY</span>
+                        <h3>RECENT <strong>MEMBERS.</strong></h3>
+                    </div>
+
+                    <a href="error.html" class="view-all">
+                        VIEW ALL
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="member-table">
+
+                    <div class="table-head">
+                        <span>MEMBER</span>
+                        <span>MEMBERSHIP</span>
+                        <span>STATUS</span>
+                        <span>JOINED</span>
+                        <span>ACTION</span>
+                    </div>
+
+                    <a href="error.html" class="member-row">
+
+                        <div class="member-info">
+                            <div class="member-avatar">AS</div>
+                            <div>
+                                <strong>Anjali Sharma</strong>
+                                <span>anjali@example.com</span>
+                            </div>
+                        </div>
+
+                        <div class="membership">
+                            <strong>Pro</strong>
+                            <span>Monthly</span>
+                        </div>
+
+                        <span class="status active">ACTIVE</span>
+
+                        <span class="joined">06 OCT 2026</span>
+
+                        <span class="row-action">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+
+                    </a>
+
+                    <a href="error.html" class="member-row">
+
+                        <div class="member-info">
+                            <div class="member-avatar">RK</div>
+                            <div>
+                                <strong>Rohan Kumar</strong>
+                                <span>rohan@example.com</span>
+                            </div>
+                        </div>
+
+                        <div class="membership">
+                            <strong>Elite</strong>
+                            <span>Monthly</span>
+                        </div>
+
+                        <span class="status active">ACTIVE</span>
+
+                        <span class="joined">05 OCT 2026</span>
+
+                        <span class="row-action">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+
+                    </a>
+
+                    <a href="error.html" class="member-row">
+
+                        <div class="member-info">
+                            <div class="member-avatar">MR</div>
+                            <div>
+                                <strong>Meera Rao</strong>
+                                <span>meera@example.com</span>
+                            </div>
+                        </div>
+
+                        <div class="membership">
+                            <strong>Essential</strong>
+                            <span>Monthly</span>
+                        </div>
+
+                        <span class="status active">ACTIVE</span>
+
+                        <span class="joined">04 OCT 2026</span>
+
+                        <span class="row-action">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+
+                    </a>
+
+                    <a href="error.html" class="member-row">
+
+                        <div class="member-info">
+                            <div class="member-avatar">VS</div>
+                            <div>
+                                <strong>Vikram Singh</strong>
+                                <span>vikram@example.com</span>
+                            </div>
+                        </div>
+
+                        <div class="membership">
+                            <strong>Pro</strong>
+                            <span>Monthly</span>
+                        </div>
+
+                        <span class="status pending">PENDING</span>
+
+                        <span class="joined">03 OCT 2026</span>
+
+                        <span class="row-action">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="member-bottom">
+
+                <div class="membership-card">
+
+                    <div class="section-heading">
+                        <div>
+                            <span>03 / MEMBERSHIP BREAKDOWN</span>
+                            <h3>PLAN <strong>OVERVIEW.</strong></h3>
+                        </div>
+                    </div>
+
+                    <div class="plan-list">
+
+                        <div class="plan-row">
+                            <div class="plan-icon">
+                                <i class="fa-solid fa-dumbbell"></i>
+                            </div>
+                            <div class="plan-content">
+                                <strong>Essential</strong>
+                                <span>Basic gym access</span>
+                            </div>
+                            <strong>486</strong>
+                        </div>
+
+                        <div class="plan-row">
+                            <div class="plan-icon">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div class="plan-content">
+                                <strong>Pro</strong>
+                                <span>Training & classes</span>
+                            </div>
+                            <strong>524</strong>
+                        </div>
+
+                        <div class="plan-row">
+                            <div class="plan-icon">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div class="plan-content">
+                                <strong>Elite</strong>
+                                <span>Personal coaching</span>
+                            </div>
+                            <strong>238</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="member-insight">
+
+                    <span>MEMBER INSIGHT</span>
+
+                    <div class="insight-number">
+                        <strong>86</strong>
+                        <span>%</span>
+                    </div>
+
+                    <h4>MEMBERS ARE<br>STAYING ACTIVE.</h4>
+
+                    <p>
+                        Current engagement is performing above the monthly
+                        activity target.
+                    </p>
+
+                    <div class="insight-progress">
+                        <span></span>
+                    </div>
+
+                    <a href="error.html">
+                        VIEW ANALYTICS
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="member.js"></script>
+</body>
+</html>
